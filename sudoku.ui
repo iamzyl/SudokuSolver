@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sudoku</class>
+ <widget class="QMainWindow" name="Sudoku">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sudoku</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>461</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_13">
+     <item row="0" column="0">
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="tltl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="tltm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="tltr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="tlml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="tlmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="tlmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="tlbl"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="tlbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="tlbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QFrame" name="frame_2">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="tmtl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="tmtm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="tmtr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="tmml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="tmmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="tmmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="tmbl"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="tmbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="tmbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QFrame" name="frame_3">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="trtl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="trtm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="trtr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="trml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="trmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="trmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="trbl">
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="trbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="trbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QFrame" name="frame_4">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="mltl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="mltm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="mltr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="mlml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="mlmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="mlmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="mlbl"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="mlbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="mlbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QFrame" name="frame_5">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="mmtl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="mmtm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="mmtr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="mmml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="mmmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="mmmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="mmbl"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="mmbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="mmbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QFrame" name="frame_6">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="mrtl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="mrtm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="mrtr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="mrml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="mrmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="mrmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="mrbl"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="mrbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="mrbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QFrame" name="frame_7">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="bltl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="bltm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="bltr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="blml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="blmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="blmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="blbl"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="blbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="blbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QFrame" name="frame_8">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="bmtl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="bmtm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="bmtr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="bmml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="bmmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="bmmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="bmbl"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="bmbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="bmbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QFrame" name="frame_9">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>121</width>
+          <height>122</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="brtl"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="brtm"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="brtr"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="brml"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="brmm"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="brmr"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLineEdit" name="brbl"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="brbm"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="brbr"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>188</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="solve">
+       <property name="text">
+        <string>Solve</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clear">
+       <property name="text">
+        <string>clear</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>483</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
